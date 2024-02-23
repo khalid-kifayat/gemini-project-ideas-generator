@@ -4,7 +4,7 @@ This Streamlit app generates project ideas and guidelines for data-related roles
 
 ## Access the App
 
-You can access the app [here](https://geminiprojectgenerator.streamlit.app/).
+You can access the app; (https://project-ideas.streamlit.app/).
 
 ## Instructions
 

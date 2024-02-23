@@ -15,13 +15,13 @@ if 'project_ideas' not in st.session_state:
     st.session_state.project_ideas = []
 
 # Title and description
-st.title("Data Project Generator")
-st.write("Generate project ideas and guidelines for data-related roles.")
+st.header("🤖 Project Ideas & Custom Project Description Generator")
+st.subheader("Generate project ideas/guidelines for data-related roles.")
 
 # User input
 job_title = st.text_input("Enter your job title (e.g., data analyst, data scientist, data engineer):")
 tools = st.text_input("Enter tools for projects (comma-separated, e.g., Python, R, Excel, PowerBI):")
-technique = st.text_input("Enter a technique to showcase:")
+technique = st.text_input("Enter a focus topic technique to showcase:")
 industry = st.text_input("Enter an industry for projects:")
 
 # Button to generate project ideas
@@ -53,4 +53,24 @@ if st.button("Generate Detailed Explanation"):
     else:
         st.warning("Please select a project first.")
 
+
+st.markdown("---")
+st.caption("Python-Langchain Application created by Khalid kifayat :sunglasses:")
+
+hide_streamlit_style = """
+            <style>
+
+            [data-testid="stToolbar"] {visibility: hidden;}
+            .reportview-container {
+            margin-top: -2em;
+        }
+            #MainMenu {visibility: hidden;}
+            .stDeployButton {display:none;}
+            #stDecoration {display:none;}
+            footer {visibility: hidden;}
+            div.embeddedAppMetaInfoBar_container__DxxL1 {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
